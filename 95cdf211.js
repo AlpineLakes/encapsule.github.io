@@ -66,8 +66,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  This script will be called when the HTML5 document published at
 	  URL 'https://encapsule.io/' loads in your browser.
 
-	  Produced by Encapsule/snapsite v0.0.7 Thu Feb 18 2016 06:17:51 GMT-0800 (PST)
-	  Site build instance: [1455805071686 LZ5DR6yuS-GZbXh5rkL4GQ]
+	  Produced by Encapsule/snapsite v0.0.8 Thu Feb 18 2016 12:23:13 GMT-0800 (PST)
+	  Site build instance: [1455826993225 xM3UxTRXRsewe7hSd-h65w]
 	*/
 	// ======================================================================
 
@@ -79,7 +79,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ReactDOM = SNAPRT.reactDOM;
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(193);
+	var reactContextData = __webpack_require__(195);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -91,28 +91,41 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	console.log("snapsite client app initializing on route '/'...");
 	console.log("Page [Encapsule.io :: Home] (95cdf211) Copyright (C) 2016 Encapsule.io");
-	console.log("Powered by Encapsule/snapsite v0.0.7 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
+	console.log("Powered by Encapsule/snapsite v0.0.8 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
 	// Load the developer-defined React component responsible for rendering
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
-	var reactContentComponent = __webpack_require__(194);
 
-	// If there's no content.jsx module defined in the route directory,
-	// use <MissingContent> component from SNAPSITE.reactTheme.
-	// TO-DO
-
-	// Possibly require in client-side app plug-ins?
-	// I'm thinking a pre/post render callback would be useful.
-	// May additionally provide the option to override default
-	// behavior entirely skipping the auto-render?
-	// TO-DO
+	var reactContentComponent = __webpack_require__(196);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
 
-	ReactDOM.render(React.createElement(SNAPRT.reactTheme.SnapPage, reactContextData), document.getElementById('content'));
+	console.log("... client app context is intitialized.");
+
+	var renderPageContent = function renderPageContent() {
+	    var startTime = new Date().getTime();
+	    ReactDOM.render(React.createElement(SNAPRT.reactTheme.SnapPage, reactContextData), document.getElementById('content'));
+	    var endTime = new Date().getTime();
+	    // console.log("[" + startTime + "] client render completed in " + (endTime - startTime) + " msec.");
+	};
+
+	console.log("... re-rendering the page client-side...");
+	renderPageContent();
+
+	var clientAppEntry = __webpack_require__(197);
+
+	console.log("... calling client runtime extension...");
+	clientAppEntry({
+	    context: reactContextData,
+	    renderContent: renderPageContent
+	});
+
+	console.log("> OK: " + reactContextData.generator.agent.name + " v" + reactContextData.generator.agent.version + " client app '" + reactContextData.page.primaryRouteHash + "' is running on route '" + reactContextData.page.primaryRoute + "' :)");
+	console.log("Happy browsing!");
+
 	// ======================================================================
 
 /***/ },
@@ -23538,7 +23551,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    Breadcrumbs: __webpack_require__(185),
 	    Copyright: __webpack_require__(187),
 	    RouteHashLink: __webpack_require__(186),
-	    Sitemap: __webpack_require__(188)
+	    Sitemap: __webpack_require__(188),
+	    MissingContentRender: __webpack_require__(189)
 	};
 
 
@@ -23823,11 +23837,76 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = Sitemap;
 
 /***/ },
-/* 189 */,
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	////
+	// missing-content-render.jsx
+
+	var ARCCORE = __webpack_require__(2);
+	var React = __webpack_require__(26);
+
+	var MissingContentRender = React.createClass({
+	    displayName: 'MissingContentRender',
+
+	    className: "MissingContentRender",
+	    render: function render() {
+	        var boxStyles = {
+	            margin: '1em',
+	            padding: '1em',
+	            backgroundColor: "#FFCC99",
+	            border: "5px solid red",
+	            fontFamily: "Courier",
+	            fontSize: "10pt"
+	        };
+
+	        return React.createElement(
+	            'div',
+	            { style: boxStyles },
+	            React.createElement(
+	                'h2',
+	                null,
+	                'Missing content.jsx'
+	            ),
+	            React.createElement(
+	                'p',
+	                null,
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'Cannot display page-specific content for \'',
+	                    this.props.page.primaryRouteHash,
+	                    '\' on route \'',
+	                    this.props.page.primaryRoute,
+	                    '\'.'
+	                )
+	            ),
+	            React.createElement(
+	                'p',
+	                null,
+	                'Please create the file ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    '\'content.jsx\''
+	                ),
+	                ' in the route input directory, and rebuild the site to correct this problem.'
+	            )
+	        );
+	    }
+	});
+
+	module.exports = MissingContentRender;
+
+/***/ },
 /* 190 */,
 /* 191 */,
 /* 192 */,
-/* 193 */
+/* 193 */,
+/* 194 */,
+/* 195 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -23850,13 +23929,13 @@ return /******/ (function(modules) { // webpackBootstrap
 		},
 		"generator": {
 			"build": {
-				"time": 1455805071686,
-				"date": "Thu Feb 18 2016 06:17:51 GMT-0800 (PST)",
-				"hash": "LZ5DR6yuS-GZbXh5rkL4GQ"
+				"time": 1455826993225,
+				"date": "Thu Feb 18 2016 12:23:13 GMT-0800 (PST)",
+				"hash": "xM3UxTRXRsewe7hSd-h65w"
 			},
 			"agent": {
 				"name": "snapsite",
-				"version": "0.0.7"
+				"version": "0.0.8"
 			}
 		},
 		"pagesGraph": {
@@ -23919,6 +23998,17 @@ return /******/ (function(modules) { // webpackBootstrap
 					}
 				},
 				{
+					"u": "dc674fc7",
+					"p": {
+						"primaryRouteHash": "dc674fc7",
+						"primaryRoute": "/tiffany",
+						"title": "Hello, Tiffany",
+						"description": "This is a simple demo page.",
+						"tooltip": "Jump to Tiff's demo page...",
+						"rank": 0
+					}
+				},
+				{
 					"u": "45e08422",
 					"p": {
 						"primaryRouteHash": "45e08422",
@@ -23957,6 +24047,12 @@ return /******/ (function(modules) { // webpackBootstrap
 				},
 				{
 					"e": {
+						"u": "95cdf211",
+						"v": "dc674fc7"
+					}
+				},
+				{
+					"e": {
 						"u": "b4dab170",
 						"v": "45e08422"
 					}
@@ -23990,6 +24086,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				"a9671cc6": "/docs",
 				"c483d4a4": "/new-page",
 				"754ab58d": "/static",
+				"dc674fc7": "/tiffany",
 				"45e08422": "/about/contact"
 			},
 			"routeToRouteHashMap": {
@@ -23999,13 +24096,14 @@ return /******/ (function(modules) { // webpackBootstrap
 				"/docs": "a9671cc6",
 				"/new-page": "c483d4a4",
 				"/static": "754ab58d",
+				"/tiffany": "dc674fc7",
 				"/about/contact": "45e08422"
 			}
 		}
 	};
 
 /***/ },
-/* 194 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24066,6 +24164,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	            'div',
 	            null,
 	            React.createElement(
+	                'p',
+	                null,
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'Not much eye candy yet but there\'s a whole lot going on in this little demo!'
+	                )
+	            ),
+	            React.createElement(
+	                'i',
+	                null,
+	                'If the little ASCII spaceship launches, then the client app is working as expected!'
+	            ),
+	            React.createElement(
 	                'h2',
 	                { style: irutStyles },
 	                irut
@@ -24081,12 +24193,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	                null,
 	                'It\'s now ',
 	                datestring,
-	                ' ',
+	                ' Epoch=',
 	                timestring,
-	                ' ',
+	                '(msec) period=',
 	                elapsed,
-	                ' ',
-	                fps
+	                '(msec) framerate=',
+	                fps,
+	                '(fps)'
 	            ),
 	            React.createElement(
 	                'h3',
@@ -24095,6 +24208,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	                ' ',
 	                this.props.generator.agent.version,
 	                ' React JS data context'
+	            ),
+	            React.createElement(
+	                'i',
+	                null,
+	                'Every ReactJS page generated by ',
+	                this.props.generator.agent.name,
+	                ' is passed a JSON document to render that looks like this:'
 	            ),
 	            React.createElement(
 	                'div',
@@ -24110,6 +24230,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 
 	module.exports = rootComponent;
+
+/***/ },
+/* 197 */
+/***/ function(module, exports) {
+
+	// client-runtime.js
+
+	module.exports = function(request_) {
+
+	    console.log("Route '" + request_.context.page.primaryRoute + "' + client extension entry...");
+
+	    console.log("... setting a timer to refresh page.");
+	    setInterval(request_.renderContent, 1000/24);
+
+	};
+
 
 /***/ }
 /******/ ])

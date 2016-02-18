@@ -62,9 +62,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for Encapsule.io snapsite route 'c483d4a4'.
+	  Main client entry point for Encapsule.io snapsite route 'dc674fc7'.
 	  This script will be called when the HTML5 document published at
-	  URL 'https://encapsule.io/new-page' loads in your browser.
+	  URL 'https://encapsule.io/tiffany' loads in your browser.
 
 	  Produced by Encapsule/snapsite v0.0.8 Thu Feb 18 2016 12:23:13 GMT-0800 (PST)
 	  Site build instance: [1455826993225 xM3UxTRXRsewe7hSd-h65w]
@@ -79,7 +79,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ReactDOM = SNAPRT.reactDOM;
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(202);
+	var reactContextData = __webpack_require__(204);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -89,8 +89,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Replace the serialized digraph model with a runtime DirectedGraph container.
 	reactContextData.pagesGraph = factoryResponse.result;
 
-	console.log("snapsite client app initializing on route '/new-page'...");
-	console.log("Page [Encapsule.io :: Hello, John] (c483d4a4) Copyright (C) 2016 Encapsule.io");
+	console.log("snapsite client app initializing on route '/tiffany'...");
+	console.log("Page [Encapsule.io :: Hello, Tiffany] (dc674fc7) Copyright (C) 2016 Encapsule.io");
 	console.log("Powered by Encapsule/snapsite v0.0.8 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
@@ -98,7 +98,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
 
-	var reactContentComponent = __webpack_require__(203);
+	var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -23924,7 +23924,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 199 */,
 /* 200 */,
 /* 201 */,
-/* 202 */
+/* 202 */,
+/* 203 */,
+/* 204 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -24078,11 +24080,11 @@ return /******/ (function(modules) { // webpackBootstrap
 			]
 		},
 		"page": {
-			"primaryRouteHash": "c483d4a4",
-			"primaryRoute": "/new-page",
-			"title": "Hello, John",
-			"description": "A test page to demonstrate some basic capabilities.",
-			"tooltip": "Jump to the Hello, John demo page...",
+			"primaryRouteHash": "dc674fc7",
+			"primaryRoute": "/tiffany",
+			"title": "Hello, Tiffany",
+			"description": "This is a simple demo page.",
+			"tooltip": "Jump to Tiff's demo page...",
 			"rank": 0,
 			"context": {}
 		},
@@ -24109,92 +24111,6 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}
 	};
-
-/***/ },
-/* 203 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var contextData = __webpack_require__(202);
-
-	var COMMON = __webpack_require__(1);
-	var ARCCORE = COMMON.arccore;
-	var React = COMMON.react;
-
-	var ReactTheme = COMMON.reactTheme;
-
-	var renderContent = React.createClass({
-	  displayName: 'renderContent',
-
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      null,
-	      React.createElement(
-	        'p',
-	        null,
-	        'Since yesterday:'
-	      ),
-	      React.createElement(
-	        'ul',
-	        null,
-	        React.createElement(
-	          'li',
-	          null,
-	          'Hand-created client and server entry points in route directories are gone. This logic is now generated at build-time.'
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          'I\'ve created the basis for a powerful theme system that will be super simple to use. Install an npm package, change a line in your config, and recompile will reskin any site generated with ',
-	          this.props.generator.agent.name,
-	          '.'
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          'This little demo uses several basic widgets implemented by the default theme.',
-	          React.createElement(
-	            'ul',
-	            null,
-	            React.createElement(
-	              'li',
-	              null,
-	              'breadcrumbs at the top of the page'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'page title'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'sitemap / copyright footer'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'In-site link helpers that abstract the details of URL\'s (can get tricky). For example: ',
-	              React.createElement(ReactTheme.RouteHashLink, _extends({}, this.props, { routeHash: this.props.lookup.routeToRouteHashMap['/'] })),
-	              ' links back to the top of the site using a hash signature I don\'t know off the top of my head. In this case I use the route \'/\''
-	            )
-	          )
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          'This little demo is a raw copy of the generated client app to github pages (free hosting).'
-	        )
-	      )
-	    );
-	  }
-	});
-
-	module.exports = renderContent;
 
 /***/ }
 /******/ ])
