@@ -62,12 +62,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for Encapsule Project snapsite route '943a1dc2'.
+	  Main client entry point for Encapsule Platform snapsite route '943a1dc2'.
 	  This script will be called when the HTML5 document published at
 	  URL 'http://encapsule.github.io/' loads in your browser.
 
-	  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:44:51 GMT-0800 (PST)
-	  Site build instance: [1456998291026 eC4FuglPSJqzdIYoCSPzFQ]
+	  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:57:42 GMT-0800 (PST)
+	  Site build instance: [1456999062723 ugFS8RbdTIyEPUIDtQ5Hhw]
 	*/
 	// ======================================================================
 
@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	reactContextData.pagesGraph = factoryResponse.result;
 
 	console.log("snapsite client app initializing on route '/'...");
-	console.log("Page [Encapsule Project :: Home] (943a1dc2) Copyright (C) 2016 Encapsule.io");
+	console.log("Page [Encapsule Platform :: Home] (943a1dc2) Copyright (C) 2016 Encapsule.io");
 	console.log("Powered by Encapsule/snapsite v0.0.10 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
@@ -43311,16 +43311,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	  access to theme bindings (array of named function points to React
 	  JS components specific to the the current snapsite theme).
 
-	  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:44:51 GMT-0800 (PST)
-	  Site build instance: [1456998291026 eC4FuglPSJqzdIYoCSPzFQ]
+	  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:57:42 GMT-0800 (PST)
+	  Site build instance: [1456999062723 ugFS8RbdTIyEPUIDtQ5Hhw]
 	*/
 	// ======================================================================
 
 	var snaprt = __webpack_require__(2);
 	snaprt.generator = {
 	    build: {
-	        time: '1456998291026',
-	        date: 'Thu Mar 03 2016 01:44:51 GMT-0800 (PST)'
+	        time: '1456999062723',
+	        date: 'Thu Mar 03 2016 01:57:42 GMT-0800 (PST)'
 	    },
 	    agent: {
 	        name: 'snapsite',
@@ -43344,7 +43344,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		"site": {
 			"seed": "JsvpmqEZTheWw4nR63a3Sg",
 			"url": "http://encapsule.github.io",
-			"title": "Encapsule Project",
+			"title": "Encapsule Platform",
 			"description": "Data, models, Node.js, HTML5, the cloud, graphs, and love from Seattle.",
 			"copyright": "Copyright (C) 2016 Encapsule.io",
 			"context": {
@@ -43481,9 +43481,9 @@ return /******/ (function(modules) { // webpackBootstrap
 		},
 		"generator": {
 			"build": {
-				"time": 1456998291026,
-				"date": "Thu Mar 03 2016 01:44:51 GMT-0800 (PST)",
-				"hash": "eC4FuglPSJqzdIYoCSPzFQ"
+				"time": 1456999062723,
+				"date": "Thu Mar 03 2016 01:57:42 GMT-0800 (PST)",
+				"hash": "ugFS8RbdTIyEPUIDtQ5Hhw"
 			},
 			"agent": {
 				"name": "snapsite",
