@@ -6,7 +6,7 @@ module.exports = {
         seed: "koJdft_STGCMJe6dZcq5kg"
     },
     site: {
-        title: "Encapsule Project",
+        title: "Encapsule Platform",
         description: "Data, models, Node.js, HTML5, the cloud, graphs, and love from Seattle.",
         seed: "JsvpmqEZTheWw4nR63a3Sg",
         url: "http://encapsule.github.io"

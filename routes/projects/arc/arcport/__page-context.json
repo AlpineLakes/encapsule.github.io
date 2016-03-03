@@ -9,7 +9,7 @@
     "site": {
         "seed": "JsvpmqEZTheWw4nR63a3Sg",
         "url": "http://encapsule.github.io",
-        "title": "Encapsule Project",
+        "title": "Encapsule Platform",
         "description": "Data, models, Node.js, HTML5, the cloud, graphs, and love from Seattle.",
         "copyright": "Copyright (C) 2016 Encapsule.io",
         "context": {
@@ -146,9 +146,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456996900059,
-            "date": "Thu Mar 03 2016 01:21:40 GMT-0800 (PST)",
-            "hash": "lVvIXgnZT5ONcaO09NeL8Q"
+            "time": 1456999062723,
+            "date": "Thu Mar 03 2016 01:57:42 GMT-0800 (PST)",
+            "hash": "ugFS8RbdTIyEPUIDtQ5Hhw"
         },
         "agent": {
             "name": "snapsite",

@@ -4,12 +4,12 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Main client entry point for Encapsule Project snapsite route 'aad5552c'.
+  Main client entry point for Encapsule Platform snapsite route 'aad5552c'.
   This script will be called when the HTML5 document published at
   URL 'http://encapsule.github.io/projects/jsgraph' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:21:40 GMT-0800 (PST)
-  Site build instance: [1456996900059 lVvIXgnZT5ONcaO09NeL8Q]
+  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:57:42 GMT-0800 (PST)
+  Site build instance: [1456999062723 ugFS8RbdTIyEPUIDtQ5Hhw]
 */
 // ======================================================================
 
@@ -33,7 +33,7 @@ if (factoryResponse.error) {
 reactContextData.pagesGraph = factoryResponse.result;
 
 console.log("snapsite client app initializing on route '/projects/jsgraph'...");
-console.log("Page [Encapsule Project :: jsgraph] (aad5552c) Copyright (C) 2016 Encapsule.io");
+console.log("Page [Encapsule Platform :: jsgraph] (aad5552c) Copyright (C) 2016 Encapsule.io");
 console.log("Powered by Encapsule/snapsite v0.0.10 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);

@@ -4,14 +4,14 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Server UX render entry entry point for Encapsule Project snapsite route 'abd001a2'.
+  Server UX render entry entry point for Encapsule Platform snapsite route 'abd001a2'.
   This script is called by the snapsite compilation process to pre-render
   HTML5  pages. This script is also leveraged at runtime by the  Node.js
   webserver process for website's that leverage custom server-side business
   logic.
 
-  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:21:40 GMT-0800 (PST)
-  Site build instance: [1456996900059 lVvIXgnZT5ONcaO09NeL8Q]
+  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:57:42 GMT-0800 (PST)
+  Site build instance: [1456999062723 ugFS8RbdTIyEPUIDtQ5Hhw]
 */
 // ======================================================================
 
