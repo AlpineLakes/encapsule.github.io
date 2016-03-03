@@ -1,0 +1,725 @@
+{
+    "org": {
+        "seed": "koJdft_STGCMJe6dZcq5kg",
+        "name": "Encapsule.io",
+        "location": "Bellevue, WA USA",
+        "url": "https://encapsule.io",
+        "email": "admin@mysite.com"
+    },
+    "site": {
+        "seed": "JsvpmqEZTheWw4nR63a3Sg",
+        "url": "http://encapsule.github.io",
+        "title": "Encapsule Project",
+        "description": "Data, models, Node.js, HTML5, the cloud, graphs, and love from Seattle.",
+        "copyright": "Copyright (C) 2016 Encapsule.io",
+        "context": {
+            "theme": {
+                "body": {
+                    "margin": "none",
+                    "padding": "0px"
+                },
+                "link": {
+                    "textDecoration": "none",
+                    "color": "#06C",
+                    "borderBottom": "1px solid #F0F0F0"
+                },
+                "linkHover": {
+                    "textDecoration": "none",
+                    "color": "#F90",
+                    "borderBottom": "1px solid #F90"
+                },
+                "linkLoading": {
+                    "textDecoration": "none",
+                    "color": "#00F",
+                    "borderBottom": "1px solid #00F",
+                    "textShadow": "0px 0px 16px #9CF"
+                },
+                "xlink": {
+                    "textDecoration": "none",
+                    "color": "#09C",
+                    "borderBottom": "1px solid #F0F0F0"
+                },
+                "xlinkHover": {
+                    "textDecoration": "none",
+                    "color": "#F90",
+                    "borderBottom": "1px solid #F90"
+                },
+                "xlinkLoading": {
+                    "textDecoration": "none",
+                    "color": "#00F",
+                    "borderBottom": "1px solid #00F",
+                    "textShadow": "0px 0px 16px #9CF"
+                },
+                "header1": {
+                    "fontSize": "22pt",
+                    "fontWeight": "bold",
+                    "color": "#CCCCCC",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header2": {
+                    "fontSize": "20pt",
+                    "fontWeight": "bold",
+                    "color": "#BBBBBB",
+                    "borderBottom": "1px solid #EEEEEE",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header3": {
+                    "fontSize": "18pt",
+                    "fontWeight": "bold",
+                    "color": "#AAAAAA",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header4": {
+                    "fontSize": "16pt",
+                    "fontWeight": "bold",
+                    "color": "#999999",
+                    "borderBottom": "1px solid #EEEEEE",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header5": {
+                    "fontSize": "14pt",
+                    "fontWeight": "bold",
+                    "color": "#888888",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header6": {
+                    "fontSize": "12pt",
+                    "fontWeight": "bold",
+                    "color": "#777777",
+                    "borderBottom": "1px solid #EEEEEE",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "pageBlock": {},
+                "breadcrumbsBlock": {
+                    "backgroundColor": "#EEE",
+                    "padding": "0.25em",
+                    "paddingLeft": "1em",
+                    "boxShadow": "0px 0px 4px 2px #CCC"
+                },
+                "titleBlock": {
+                    "margin": "0px",
+                    "padding": "1em",
+                    "boxShadow": "0px 5px 5px 1em #CCC outset"
+                },
+                "title": {
+                    "fontSize": "26pt",
+                    "fontWeight": "bold",
+                    "color": "#999999"
+                },
+                "subtitle": {
+                    "fontSize": "14pt",
+                    "fontWeight": "medium",
+                    "color": "#CCCCCC"
+                },
+                "contentBlock": {
+                    "margin": "1em"
+                },
+                "copyrightBlock": {
+                    "backgroundColor": "#EEE",
+                    "padding": "0.25em",
+                    "paddingRight": "1em",
+                    "boxShadow": "0px 1px 4px 0px #CCC inset",
+                    "textAlign": "right"
+                },
+                "snapBugBlock": {
+                    "fontFamily": "Courier",
+                    "fontSize": "6pt",
+                    "color": "#ACB",
+                    "paddingBotton": "1em",
+                    "margin": "0px",
+                    "marginTop": "2em",
+                    "marginRight": "1em",
+                    "textAlign": "right"
+                },
+                "snapBugLink": {
+                    "textDecoration": "none",
+                    "color": "#999"
+                }
+            }
+        }
+    },
+    "generator": {
+        "build": {
+            "time": 1456996900059,
+            "date": "Thu Mar 03 2016 01:21:40 GMT-0800 (PST)",
+            "hash": "lVvIXgnZT5ONcaO09NeL8Q"
+        },
+        "agent": {
+            "name": "snapsite",
+            "version": "0.0.10"
+        }
+    },
+    "pagesGraph": {
+        "name": "ReactJS UX Route Graph",
+        "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+        "vlist": [
+            {
+                "u": "943a1dc2",
+                "p": {
+                    "primaryRouteHash": "943a1dc2",
+                    "primaryRoute": "/",
+                    "title": "Home",
+                    "description": "Data and domain modeling tools for JavaScript developers.",
+                    "tooltip": "Go home...",
+                    "rank": 0,
+                    "children": [
+                        "77727df7",
+                        "4ce2db12",
+                        "fe16a520",
+                        "9b574e0c"
+                    ],
+                    "ts": {
+                        "i": 0,
+                        "d": 0,
+                        "o": 39,
+                        "w": 19
+                    }
+                }
+            },
+            {
+                "u": "9b574e0c",
+                "p": {
+                    "primaryRouteHash": "9b574e0c",
+                    "primaryRoute": "/about",
+                    "title": "About",
+                    "description": "About Encapsule Project.",
+                    "tooltip": "Learn about the history of this effort...",
+                    "rank": 20,
+                    "children": [],
+                    "ts": {
+                        "i": 1,
+                        "d": 1,
+                        "o": 2,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "4ce2db12",
+                "p": {
+                    "primaryRouteHash": "4ce2db12",
+                    "primaryRoute": "/articles",
+                    "title": "Articles",
+                    "description": "Concept and how-to articles.",
+                    "tooltip": "Learn how to use these resources...",
+                    "rank": 10,
+                    "children": [],
+                    "ts": {
+                        "i": 3,
+                        "d": 1,
+                        "o": 4,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "77727df7",
+                "p": {
+                    "primaryRouteHash": "77727df7",
+                    "primaryRoute": "/projects",
+                    "title": "Projects",
+                    "description": "Platform construction projects overview.",
+                    "tooltip": "Jump to Projects overview...",
+                    "rank": 0,
+                    "children": [
+                        "d7df211a",
+                        "13da265f",
+                        "aad5552c",
+                        "80bb5028"
+                    ],
+                    "ts": {
+                        "i": 5,
+                        "d": 1,
+                        "o": 36,
+                        "w": 15
+                    }
+                }
+            },
+            {
+                "u": "fe16a520",
+                "p": {
+                    "primaryRouteHash": "fe16a520",
+                    "primaryRoute": "/sitesearch",
+                    "title": "Sitemap",
+                    "description": "View and search the contents of this site.",
+                    "tooltip": "Sitemap and site-wide search...",
+                    "rank": 19,
+                    "children": [],
+                    "ts": {
+                        "i": 37,
+                        "d": 1,
+                        "o": 38,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "d7df211a",
+                "p": {
+                    "primaryRouteHash": "d7df211a",
+                    "primaryRoute": "/projects/arc",
+                    "title": "ARC",
+                    "description": "Addressable Resource Class (ARC) protocol project.",
+                    "tooltip": "ARC protocol project overview...",
+                    "rank": 0,
+                    "children": [
+                        "4dff70b0",
+                        "80ef8640",
+                        "fa27d1f5",
+                        "8d14a764"
+                    ],
+                    "ts": {
+                        "i": 6,
+                        "d": 2,
+                        "o": 29,
+                        "w": 11
+                    }
+                }
+            },
+            {
+                "u": "aad5552c",
+                "p": {
+                    "primaryRouteHash": "aad5552c",
+                    "primaryRoute": "/projects/jsgraph",
+                    "title": "jsgraph",
+                    "description": "An industrial-strength graph container library.",
+                    "tooltip": "Overview of jsgraph project...",
+                    "rank": 49,
+                    "children": [],
+                    "ts": {
+                        "i": 30,
+                        "d": 2,
+                        "o": 31,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "80bb5028",
+                "p": {
+                    "primaryRouteHash": "80bb5028",
+                    "primaryRoute": "/projects/onm",
+                    "title": "onm",
+                    "description": "Object Namespace Manager (onm) project.",
+                    "tooltip": "Deprecated onm project overview...",
+                    "rank": 50,
+                    "children": [],
+                    "ts": {
+                        "i": 32,
+                        "d": 2,
+                        "o": 33,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "13da265f",
+                "p": {
+                    "primaryRouteHash": "13da265f",
+                    "primaryRoute": "/projects/snapsite",
+                    "title": "snapsite",
+                    "description": "This site is built w/snapsite.",
+                    "tooltip": "Jump to snapsite overview...",
+                    "rank": 2,
+                    "children": [],
+                    "ts": {
+                        "i": 34,
+                        "d": 2,
+                        "o": 35,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "4dff70b0",
+                "p": {
+                    "primaryRouteHash": "4dff70b0",
+                    "primaryRoute": "/projects/arc/arccore",
+                    "title": "ARCcore",
+                    "description": "ARCcore runtime library project.",
+                    "tooltip": "Jump to the ARCcore lib overview...",
+                    "rank": 0,
+                    "children": [
+                        "97c19bf1",
+                        "cd5652f2",
+                        "14b06ea1",
+                        "1ef8a04c",
+                        "eed1371a",
+                        "abd001a2",
+                        "fae1ae53"
+                    ],
+                    "ts": {
+                        "i": 7,
+                        "d": 3,
+                        "o": 22,
+                        "w": 7
+                    }
+                }
+            },
+            {
+                "u": "80ef8640",
+                "p": {
+                    "primaryRouteHash": "80ef8640",
+                    "primaryRoute": "/projects/arc/arcport",
+                    "title": "ARCport",
+                    "description": "ARCport library project.",
+                    "tooltip": "ARCport library project overview...",
+                    "rank": 0,
+                    "children": [],
+                    "ts": {
+                        "i": 23,
+                        "d": 3,
+                        "o": 24,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "fa27d1f5",
+                "p": {
+                    "primaryRouteHash": "fa27d1f5",
+                    "primaryRoute": "/projects/arc/arcspace",
+                    "title": "ARCspace",
+                    "description": "ARCspace library project.",
+                    "tooltip": "ARCspace library overview...",
+                    "rank": 0,
+                    "children": [],
+                    "ts": {
+                        "i": 25,
+                        "d": 3,
+                        "o": 26,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "8d14a764",
+                "p": {
+                    "primaryRouteHash": "8d14a764",
+                    "primaryRoute": "/projects/arc/arctools",
+                    "title": "ARCtools",
+                    "description": "ARCtools suite project.",
+                    "tooltip": "ARCtools suite overview...",
+                    "rank": 0,
+                    "children": [],
+                    "ts": {
+                        "i": 27,
+                        "d": 3,
+                        "o": 28,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "abd001a2",
+                "p": {
+                    "primaryRouteHash": "abd001a2",
+                    "primaryRoute": "/projects/arc/arccore/discriminator",
+                    "title": "discriminator",
+                    "description": "Route JSON messages by type signature.",
+                    "tooltip": "ARCcore.discriminator (filters) overview...",
+                    "rank": 27,
+                    "children": [],
+                    "ts": {
+                        "i": 8,
+                        "d": 4,
+                        "o": 9,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "eed1371a",
+                "p": {
+                    "primaryRouteHash": "eed1371a",
+                    "primaryRoute": "/projects/arc/arccore/filter",
+                    "title": "filter",
+                    "description": "Automated function I/O normalization.",
+                    "tooltip": "Jump to ARCcore.filter overview...",
+                    "rank": 20,
+                    "children": [],
+                    "ts": {
+                        "i": 10,
+                        "d": 4,
+                        "o": 11,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "fae1ae53",
+                "p": {
+                    "primaryRouteHash": "fae1ae53",
+                    "primaryRoute": "/projects/arc/arccore/filterdag",
+                    "title": "filterDAG",
+                    "description": "Declarative system modeling with graphs and filters.",
+                    "tooltip": "Jump to ARCcore.filterDAG overview...",
+                    "rank": 30,
+                    "children": [],
+                    "ts": {
+                        "i": 12,
+                        "d": 4,
+                        "o": 13,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "1ef8a04c",
+                "p": {
+                    "primaryRouteHash": "1ef8a04c",
+                    "primaryRoute": "/projects/arc/arccore/graph",
+                    "title": "graph",
+                    "description": "Generic in-memory container and algorithms for graphs.",
+                    "tooltip": "Jump to ARCcore.graph overview...",
+                    "rank": 15,
+                    "children": [],
+                    "ts": {
+                        "i": 14,
+                        "d": 4,
+                        "o": 15,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "14b06ea1",
+                "p": {
+                    "primaryRouteHash": "14b06ea1",
+                    "primaryRoute": "/projects/arc/arccore/identifier",
+                    "title": "identifier",
+                    "description": "Generate URI routable hash tokens via Murmur3.",
+                    "tooltip": "Jump to ARCcore.identifier overview...",
+                    "rank": 10,
+                    "children": [],
+                    "ts": {
+                        "i": 16,
+                        "d": 4,
+                        "o": 17,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "cd5652f2",
+                "p": {
+                    "primaryRouteHash": "cd5652f2",
+                    "primaryRoute": "/projects/arc/arccore/types",
+                    "title": "types",
+                    "description": "Identify and convert JavaScript/JSON types.",
+                    "tooltip": "Jump to ARCcore.types overview...",
+                    "rank": 5,
+                    "children": [],
+                    "ts": {
+                        "i": 18,
+                        "d": 4,
+                        "o": 19,
+                        "w": 0
+                    }
+                }
+            },
+            {
+                "u": "97c19bf1",
+                "p": {
+                    "primaryRouteHash": "97c19bf1",
+                    "primaryRoute": "/projects/arc/arccore/util",
+                    "title": "util",
+                    "description": "A handful of often re-used JavaScript functions.",
+                    "tooltip": "Jump to ARCcore.util overview overview...",
+                    "rank": 0,
+                    "children": [],
+                    "ts": {
+                        "i": 20,
+                        "d": 4,
+                        "o": 21,
+                        "w": 0
+                    }
+                }
+            }
+        ],
+        "elist": [
+            {
+                "e": {
+                    "u": "943a1dc2",
+                    "v": "9b574e0c"
+                }
+            },
+            {
+                "e": {
+                    "u": "943a1dc2",
+                    "v": "4ce2db12"
+                }
+            },
+            {
+                "e": {
+                    "u": "943a1dc2",
+                    "v": "77727df7"
+                }
+            },
+            {
+                "e": {
+                    "u": "943a1dc2",
+                    "v": "fe16a520"
+                }
+            },
+            {
+                "e": {
+                    "u": "77727df7",
+                    "v": "d7df211a"
+                }
+            },
+            {
+                "e": {
+                    "u": "77727df7",
+                    "v": "aad5552c"
+                }
+            },
+            {
+                "e": {
+                    "u": "77727df7",
+                    "v": "80bb5028"
+                }
+            },
+            {
+                "e": {
+                    "u": "77727df7",
+                    "v": "13da265f"
+                }
+            },
+            {
+                "e": {
+                    "u": "d7df211a",
+                    "v": "4dff70b0"
+                }
+            },
+            {
+                "e": {
+                    "u": "d7df211a",
+                    "v": "80ef8640"
+                }
+            },
+            {
+                "e": {
+                    "u": "d7df211a",
+                    "v": "fa27d1f5"
+                }
+            },
+            {
+                "e": {
+                    "u": "d7df211a",
+                    "v": "8d14a764"
+                }
+            },
+            {
+                "e": {
+                    "u": "4dff70b0",
+                    "v": "abd001a2"
+                }
+            },
+            {
+                "e": {
+                    "u": "4dff70b0",
+                    "v": "eed1371a"
+                }
+            },
+            {
+                "e": {
+                    "u": "4dff70b0",
+                    "v": "fae1ae53"
+                }
+            },
+            {
+                "e": {
+                    "u": "4dff70b0",
+                    "v": "1ef8a04c"
+                }
+            },
+            {
+                "e": {
+                    "u": "4dff70b0",
+                    "v": "14b06ea1"
+                }
+            },
+            {
+                "e": {
+                    "u": "4dff70b0",
+                    "v": "cd5652f2"
+                }
+            },
+            {
+                "e": {
+                    "u": "4dff70b0",
+                    "v": "97c19bf1"
+                }
+            }
+        ]
+    },
+    "page": {
+        "primaryRouteHash": "cd5652f2",
+        "primaryRoute": "/projects/arc/arccore/types",
+        "title": "types",
+        "description": "Identify and convert JavaScript/JSON types.",
+        "tooltip": "Jump to ARCcore.types overview...",
+        "rank": 5,
+        "children": [],
+        "ts": {
+            "i": 18,
+            "d": 4,
+            "o": 19,
+            "w": 0
+        },
+        "context": {}
+    },
+    "lookup": {
+        "routeHashToRouteMap": {
+            "943a1dc2": "/",
+            "9b574e0c": "/about",
+            "4ce2db12": "/articles",
+            "77727df7": "/projects",
+            "fe16a520": "/sitesearch",
+            "d7df211a": "/projects/arc",
+            "aad5552c": "/projects/jsgraph",
+            "80bb5028": "/projects/onm",
+            "13da265f": "/projects/snapsite",
+            "4dff70b0": "/projects/arc/arccore",
+            "80ef8640": "/projects/arc/arcport",
+            "fa27d1f5": "/projects/arc/arcspace",
+            "8d14a764": "/projects/arc/arctools",
+            "abd001a2": "/projects/arc/arccore/discriminator",
+            "eed1371a": "/projects/arc/arccore/filter",
+            "fae1ae53": "/projects/arc/arccore/filterdag",
+            "1ef8a04c": "/projects/arc/arccore/graph",
+            "14b06ea1": "/projects/arc/arccore/identifier",
+            "cd5652f2": "/projects/arc/arccore/types",
+            "97c19bf1": "/projects/arc/arccore/util"
+        },
+        "routeToRouteHashMap": {
+            "/": "943a1dc2",
+            "/about": "9b574e0c",
+            "/articles": "4ce2db12",
+            "/projects": "77727df7",
+            "/sitesearch": "fe16a520",
+            "/projects/arc": "d7df211a",
+            "/projects/jsgraph": "aad5552c",
+            "/projects/onm": "80bb5028",
+            "/projects/snapsite": "13da265f",
+            "/projects/arc/arccore": "4dff70b0",
+            "/projects/arc/arcport": "80ef8640",
+            "/projects/arc/arcspace": "fa27d1f5",
+            "/projects/arc/arctools": "8d14a764",
+            "/projects/arc/arccore/discriminator": "abd001a2",
+            "/projects/arc/arccore/filter": "eed1371a",
+            "/projects/arc/arccore/filterdag": "fae1ae53",
+            "/projects/arc/arccore/graph": "1ef8a04c",
+            "/projects/arc/arccore/identifier": "14b06ea1",
+            "/projects/arc/arccore/types": "cd5652f2",
+            "/projects/arc/arccore/util": "97c19bf1"
+        }
+    }
+}

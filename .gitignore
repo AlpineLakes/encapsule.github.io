@@ -1,0 +1,10 @@
+# emacs
+*~
+
+# Node.js
+node_modules
+
+# snapsite
+server
+snapcache
+

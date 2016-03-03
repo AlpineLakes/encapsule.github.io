@@ -1,0 +1,16 @@
+{
+  "name": "encapsule.github.io-snapsite",
+  "version": "0.0.1",
+  "description": "Encapsule GitHub organization GitHub pages website sources.",
+  "main": "snapsite-config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Encapsule/encapsule.github.io.git"
+  },
+  "author": "ChrisRus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Encapsule/encapsule.github.io/issues"
+  },
+  "homepage": "https://github.com/Encapsule/encapsule.github.io#readme"
+}
