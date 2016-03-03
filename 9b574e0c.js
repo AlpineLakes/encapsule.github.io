@@ -66,8 +66,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  This script will be called when the HTML5 document published at
 	  URL 'http://encapsule.github.io/about' loads in your browser.
 
-	  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:28:51 GMT-0800 (PST)
-	  Site build instance: [1456997331416 WK3Mxd_5QlC6YpDYNHd7vA]
+	  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:44:51 GMT-0800 (PST)
+	  Site build instance: [1456998291026 eC4FuglPSJqzdIYoCSPzFQ]
 	*/
 	// ======================================================================
 
@@ -43315,16 +43315,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	  access to theme bindings (array of named function points to React
 	  JS components specific to the the current snapsite theme).
 
-	  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:28:51 GMT-0800 (PST)
-	  Site build instance: [1456997331416 WK3Mxd_5QlC6YpDYNHd7vA]
+	  Produced by Encapsule/snapsite v0.0.10 Thu Mar 03 2016 01:44:51 GMT-0800 (PST)
+	  Site build instance: [1456998291026 eC4FuglPSJqzdIYoCSPzFQ]
 	*/
 	// ======================================================================
 
 	var snaprt = __webpack_require__(2);
 	snaprt.generator = {
 	    build: {
-	        time: '1456997331416',
-	        date: 'Thu Mar 03 2016 01:28:51 GMT-0800 (PST)'
+	        time: '1456998291026',
+	        date: 'Thu Mar 03 2016 01:44:51 GMT-0800 (PST)'
 	    },
 	    agent: {
 	        name: 'snapsite',
@@ -43485,9 +43485,9 @@ return /******/ (function(modules) { // webpackBootstrap
 		},
 		"generator": {
 			"build": {
-				"time": 1456997331416,
-				"date": "Thu Mar 03 2016 01:28:51 GMT-0800 (PST)",
-				"hash": "WK3Mxd_5QlC6YpDYNHd7vA"
+				"time": 1456998291026,
+				"date": "Thu Mar 03 2016 01:44:51 GMT-0800 (PST)",
+				"hash": "eC4FuglPSJqzdIYoCSPzFQ"
 			},
 			"agent": {
 				"name": "snapsite",
